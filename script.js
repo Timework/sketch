@@ -8,8 +8,8 @@ function grid(numberOfDivs){
     for (i = 0; i < Math.pow(numberOfDivs, 2); i++){
         let square = document.createElement("div");
         square.classList.add("square");
-        square.height = dimensions
-        square.width = dimensions
+        square.style.height = dimensions
+        square.style.width = dimensions
         square.textContent = "test"
         container.appendChild(square);
     }
