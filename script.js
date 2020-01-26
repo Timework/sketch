@@ -10,8 +10,15 @@ function grid(numberOfDivs){
         square.classList.add("square");
         square.style.height = dimensions
         square.style.width = dimensions
-        square.textContent = "test"
         container.appendChild(square);
     }
+    const shadeEffect = document.querySelectorAll("div.square");
+    shadeEffect.forEach((shadeEffect) => {
+        shadeEffect.addEventListener("mouseover",shading);
+    })
+    function shading(e) {
+        e.target.style.background = "black";
+    }
+
 }
-console.log(grid(numberOfDivs))
+grid(numberOfDivs);
