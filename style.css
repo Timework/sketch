@@ -1,6 +1,7 @@
 #container{
     height: 500px;
     width: 500px;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -9,4 +10,17 @@
 h1{
     text-align: center;
 }
-
+button{
+    font-size: 20px;
+    margin: 10px;
+}
+#buttons{
+    text-align: center;
+}
+#decorations{
+    margin: auto;
+    background-color: red;
+    width: 680px;
+    padding-bottom: 50px;
+    padding-top: 5px;
+}

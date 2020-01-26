@@ -10,6 +10,7 @@ function grid(numberOfDivs){
         square.classList.add("square");
         square.style.height = dimensions
         square.style.width = dimensions
+        square.style.background = "white";
         container.appendChild(square);
     }
     const shadeEffect = document.querySelectorAll("div.square");
@@ -29,11 +30,11 @@ function grid(numberOfDivs){
     function randomGrid() {
         document.querySelectorAll("div.square").forEach((color) => {
             clearGrid()
-            let r = Math.random() * 255
-            let g = Math.random() * 255
-            let b = Math.random() * 255
             color.addEventListener("mouseover", colorRandom);
             function colorRandom(e) {
+                let r = Math.random() * 255
+                let g = Math.random() * 255
+                let b = Math.random() * 255
                 e.target.style.background = `rgba(${r},${g},${b})`
             }})}
     document.getElementById("grayscale").addEventListener("click", shadingGrid);
