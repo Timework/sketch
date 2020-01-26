@@ -1,0 +1,2 @@
+This is a computer version of a Etch-a-Sketch. There are four buttons, clear = clears the sketch, reset grid = lets you resize the grid,
+random color = every box is a random color, grayscale = every color is a shade of gray that gets more dark the more you pass over it. The Sketch opens at 15 x 15. Completed : 01/25/2020
